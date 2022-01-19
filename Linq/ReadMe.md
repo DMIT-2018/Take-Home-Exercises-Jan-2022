@@ -2,7 +2,7 @@
 
 > Private Classroom GitHub Repo Only
 
-This exercise is based on the GroceryList database. For this exercise, provide your answers as LinqPad (.linq) document(s). Use either A) a single LinqPad document for each question (you will use Expressions as the LinqPad environment or B) a single LinqPad document containing all questions (you will need to use Statements as the LinqPad environment. You **must** do a commit after completing each question.
+This exercise is based on the GroceryList database. For this exercise, provide your answers as LinqPad (.linq) document(s). Use either A) a single LinqPad document for each question (you will use Expressions as the LinqPad environment) or B) a single LinqPad document containing all questions (you will need to use Statements as the LinqPad environment). You **must** do a commit after completing each question.
 
 ![GroceryList ERD](./grocerylist_erd.png)
 
