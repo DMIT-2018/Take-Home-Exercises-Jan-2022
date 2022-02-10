@@ -3,6 +3,7 @@
 > Exercises for this term are posted to this repository. You can copy these instructions to your exercise repository set up by your instructor for this term.
 
 1. [Linq](./Linq/ReadMe.md)
+1. [Razor Pages/EntityFrame](./EntityFramework/ReadMe.md)
 
 
 ## Documentation and Planning
