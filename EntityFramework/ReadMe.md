@@ -35,7 +35,7 @@ Create a client-server application of a single solution (`.sln`) with a Web Appl
   - Contain a `ReadMe.md` file at the root of the solution folder. Use this file to report any **known bugs** in your exercise at the time of submission.
 - The Web Application project must:
   - Include *Individual User Accounts* for its *Authentication*.
-  - Use a classless stylesheet such as [**HolidayCSS**](https://holidaycss.js.org/) or any other one approved by your instructor.
+  - Use a stylesheet such as [**HolidayCSS**](https://holidaycss.js.org/) or any other one approved by your instructor.
 - The class library must contain the Entity Framework classes for the **GroceryList** database.
   - Generate these by reverse-engineering the database.
   - Ensure the entity and DbContext classes are marked as **`internal`**.
@@ -56,7 +56,7 @@ Categories should be sorted by description and displayed in a drop down; the dro
 
 > Remember to use appropriate *View Model* classes for exchanging data with the Presentation Layer.
 
-Create a web page to perform CRUD maintenance on individual products. Link to this page via the product description on the previous Query page (from Part 2).
+Create a web page to perform CRUD maintenance on individual products. You may do the CRUD processing on a separate page and link to this page via the product description on the previous Query page (from Part 2). You may combine the CRUD on the same page as the previous Query page.
 
 ![Query Changes](./ExerciseQueryUpdated.png)
 
