@@ -22,7 +22,7 @@ In completing this exercise, you are required to plan and track your progress th
 
 Create a single Milestone named "**Exercise 2 - Query and CRUD Review**" and assign it the due date for this exercise. For this milestone, create several Issues to outline your plan for completing this exercise; each issue must be titled and described appropriately. You are expected to reference these issue numbers when committing your code; you must also close at least one issue via a commit.
 
-**These milestones and issues are expected to be set up within 36 hours of the day that the assignment is released.**
+**These milestones and issues are expected to be set up within 48 hours of the day that the assignment is released.**
 
 ----
 
