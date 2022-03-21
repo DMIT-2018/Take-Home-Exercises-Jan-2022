@@ -1,0 +1,107 @@
+﻿@page "{OrderId?}/{PickerId?}"
+@model WebApp.Pages.ExercisePages.RecordPickingModel
+@{
+    ViewData["Title"]= "Record Picking";
+}
+<h1>Customer Picking Order</h1>
+
+@if (Model.HasFeedBack)
+{
+
+    <blockquote class="success">@Model.FeedBackMessage</blockquote>
+}
+
+@if (Model.HasError)
+{
+    <blockquote class="error">
+        @Model.ErrorMessage
+        <ul>
+            @foreach(var detail in Model.ErrorDetails)
+            {
+                <li>@detail</li>
+            }
+        </ul>
+    </blockquote>
+}
+
+<form method="post">
+
+    <div class="setflex">
+        <Label>
+            Order ID:
+            <input type="number" asp-for="OrderId" min="0" />
+            <br />&nbsp;
+        </Label>
+        <Label>
+            Picker ID:
+            <input type="number" asp-for="PickerId" min="0" />
+            @if (Model.OrderInfo != null)
+            {
+                <button type="submit" asp-page-handler="Fetch" disabled
+                        style="background-color:var(--info-color)">
+                    Fetch
+                </button>
+                <button type="submit" asp-page-handler="Save"
+                        style="background-color:var(--success-color)">
+                    Save
+                </button>
+                <button type="submit" asp-page-handler="Clear"
+                        style="background-color:var(--danger-color)">
+                    Clear
+                </button>
+            }
+            else
+            {
+                <button type="submit" asp-page-handler="Fetch"
+                        style="background-color:var(--info-color)">
+                    Fetch
+                </button>
+                <button type="submit" asp-page-handler="Save" disabled
+                        style="background-color:var(--success-color)">
+                    Save
+                </button>
+                <button type="submit" asp-page-handler="Clear" disabled
+                        style="background-color:var(--danger-color)">
+                    Clear
+                </button>
+            }
+            
+        </Label>
+        <label>
+            @if(Model.OrderInfo != null)
+            {
+                <span>
+                    Picker: @Model.OrderInfo.PickerName <br />
+                    Customer: @Model.OrderInfo.CustomerName<br />
+                    Customer Phone: @Model.OrderInfo.CustomerPhone
+                </span>
+            }
+        </label>
+    </div>
+    <div>
+        @if (Model.OrderInfo != null)
+        {
+            if (Model.OrderInfo.OrderedItems.Count() == 0)
+            {
+                <p>There are no items on this order.</p>
+            }
+            else
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Req Qty</th>
+                            <th>Directions</th>
+                            <th>Picked Qty</th>
+                            <th>Picked Concerns</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @* TODO: Student Code Here *@
+                    </tbody>
+                </table>
+            }
+        }
+    </div>
+</form>

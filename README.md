@@ -5,6 +5,7 @@
 1. [Linq](./Linq/ReadMe.md)
 1. [Razor Pages/EntityFrame](./EntityFramework/ReadMe.md)
 1. [UI/UX Development Plan](./UX_Planning/README.md)
+1. [OLTP Coded Solution ](./OLTP_Integrated/README.md)
 
 ## Documentation and Planning
 

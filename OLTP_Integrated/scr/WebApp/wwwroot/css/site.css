@@ -1,0 +1,18 @@
+
+:root {
+    --max-body-width: 70rem;
+    --info-color: #0dcbd7;
+    --default-color: #d4c7c7;
+}
+
+.setflex {
+    display: flex;
+}
+
+.setflex Label {
+        margin: 0 25px;
+    }
+
+.smallbox {
+    width: 70px;
+}
