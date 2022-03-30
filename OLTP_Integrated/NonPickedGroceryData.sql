@@ -6,12 +6,12 @@ delete Orders
 where OrderId in (133,134,135)
 go
 SET IDENTITY_INSERT Orders ON
-insert into Orders (OrderID, OrderDate, StoreID, CustomerID, PickerID, PickedDate, Delivery, SubTotal, GST)
-VALUES(133,DateAdd(d,-1,GetDate()), 3, 13, null, null, 0, 0.00, 0.00)
-insert into Orders (OrderID, OrderDate, StoreID, CustomerID, PickerID, PickedDate, Delivery, SubTotal, GST)
-VALUES(134,DateAdd(d,-1,GetDate()), 2, 5, null, null, 0, 0.00, 0.00)
-insert into Orders (OrderID, OrderDate, StoreID, CustomerID, PickerID, PickedDate, Delivery, SubTotal, GST)
-VALUES(135,GetDate(), 3, 10, null, null, 0, 0.00, 0.00)
+insert into Orders (OrderID, OrderDate, StoreID, CustomerID, PickerID, RequiredBy, Delivery, SubTotal, GST, Status, LastStatusUpdate)
+VALUES(133,DateAdd(d,-1,GetDate()), 3, 13, null, null, 0, 0.00, 0.00, 'O', DateAdd(d,-1,GetDate()))
+insert into Orders (OrderID, OrderDate, StoreID, CustomerID, PickerID, RequiredBy, Delivery, SubTotal, GST, Status, LastStatusUpdate)
+VALUES(134,DateAdd(d,-1,GetDate()), 2, 5, null, null, 0, 0.00, 0.00, 'O', DateAdd(d,-1,GetDate()))
+insert into Orders (OrderID, OrderDate, StoreID, CustomerID, PickerID, RequiredBy, Delivery, SubTotal, GST, Status, LastStatusUpdate)
+VALUES(135,GetDate(), 3, 10, null, null, 0, 0.00, 0.00,'O', DateAdd(d,-1,GetDate()))
 SET IDENTITY_INSERT Orders OFF
 go
 SET IDENTITY_INSERT OrderList ON
