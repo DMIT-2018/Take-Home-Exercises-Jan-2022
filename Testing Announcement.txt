@@ -1,0 +1,11 @@
+IMPORTANT testing for GroceryList
+
+The data file I supplied for the GroceryList testing called NonPickedGroceryData.sql
+is an older version. I have updated the file to match this semester OrderList table.
+
+I have placed the correct file on the moodle site under Exercises/CQRS OLPT. Download it!
+
+The file has 3 orders
+ order id  133 has 8 details, store is 3, picker can be 4 (Margreet Park) or 5 (Steve Johnson)
+ order id  134 has 8 details, store is 2, picker can be 3 (Jane Peacock)
+ order id  135 has 5 details, store is 3, picker can be 4 (Margreet Park) or 5 (Steve Johnson)
